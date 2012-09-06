@@ -1,6 +1,7 @@
-Traductor menu contextual
-Chrome Extension
-Selecciona el texto y pulsa el botón derecho para traducirlo.
+Traductor menu contextual (Chrome Extension)
+============================================
+
+- Selecciona el texto y pulsa el botón derecho para traducirlo.
 
 Copyright 2012 Edgar Miró
 License: BSD
