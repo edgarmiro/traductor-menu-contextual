@@ -1,11 +1,23 @@
 ﻿{
-   "background_page": "background.html",
-   "description": "Selecciona el texto y pulsa el botón derecho para traducirlo.",
-   "icons": {
-      "128": "icon_128.png",
-      "16": "icon_16.png"
+   "manifest_version": 2,
+   "version": "2.0",
+   "default_locale": "en",
+   "name": "__MSG_appName__",
+   "description": "__MSG_appDescription__",
+   "author": "Edgar Miró",
+   "homepage_url": "http://www.neo10developers.es",   
+   "icons": {      
+      "16": "icon_16.png",
+      "48": "icon_48.png",
+      "128": "icon_128.png"
    },
-   "name": "Traductor menu contextual",
    "permissions": [ "contextMenus" ],
-   "version": "1.0"
+   "background": {
+      "scripts": ["background.js"] 
+   },
+   "offline_enabled": false,
+   "options_ui": {
+      "page": "options.html",
+      "chrome_style": true
+   }  
 }

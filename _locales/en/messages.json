@@ -1,0 +1,14 @@
+{
+	"appName": {
+		"message": "Contextual translator",
+		"description": "Nombre de la aplicación"
+	},
+	"appDescription": {
+		"message": "Select the text and click the right button to translate.",
+		"description": "Descripción de la aplicación"
+	},
+	"translate": {
+		"message": "Translate '%s'",
+		"description": "Texto del menú contextual."
+	}
+}

@@ -30,17 +30,19 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-var URL_PREFIX = 'http://translate.google.com/?ie=UTF-8&sl=auto&tl=es&text=';
+var lang = window.navigator.language;
+var traducir = chrome.i18n.getMessage("translate");
+var URL_PREFIX = 'https://translate.google.com/?ie=UTF-8&sl=auto&tl=' + lang + '&text=';
 
 var translate = function(string) {
-  var url = URL_PREFIX + string.replace(/ /g, "+");
-  chrome.tabs.create({'url': url});
+	var url = URL_PREFIX + string.replace(/ /g, "+");
+	chrome.tabs.create({'url': url});
 }
 
 chrome.contextMenus.create({
-  'title': "Traducir '%s' a español",
-  'contexts': ['selection'],
-  'onclick': function(info, tab) {
-    translate(info.selectionText);
-  }
+	'title': traducir,
+	'contexts': ['selection'],
+	'onclick': function(info, tab) {
+		translate(info.selectionText);
+	}
 });
