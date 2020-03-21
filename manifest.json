@@ -1,11 +1,11 @@
 ﻿{
    "manifest_version": 2,
-   "version": "2.0",
+   "version": "3.0",
    "default_locale": "en",
    "name": "__MSG_appName__",
    "description": "__MSG_appDescription__",
    "author": "Edgar Miró",
-   "homepage_url": "http://www.neo10developers.es",   
+   "homepage_url": "https://www.n10.dev",   
    "icons": {      
       "16": "icon_16.png",
       "48": "icon_48.png",
