@@ -1,6 +1,6 @@
 /* background.js
  *
- * Copyright (c) 2012 Edgar Miró. License: BSD.
+ * Copyright (c) 2012 Edgar MirÃ³. License: BSD.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -30,9 +30,8 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-var lang = window.navigator.language;
 var traducir = chrome.i18n.getMessage("translate");
-var URL_PREFIX = 'https://translate.google.com/?ie=UTF-8&sl=auto&tl=' + lang + '&text=';
+var URL_PREFIX = 'https://translate.google.com/?ie=UTF-8&sl=auto&text=';
 
 var translate = function(string) {
 	var url = URL_PREFIX + string.replace(/ /g, "+");
