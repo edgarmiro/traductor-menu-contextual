@@ -1,6 +1,6 @@
 ﻿{
-   "manifest_version": 2,
-   "version": "3.0",
+   "manifest_version": 3,
+   "version": "4.0",
    "default_locale": "en",
    "name": "__MSG_appName__",
    "description": "__MSG_appDescription__",
@@ -12,12 +12,9 @@
       "128": "icon_128.png"
    },
    "permissions": [ "contextMenus" ],
-   "background": {
-      "scripts": ["background.js"] 
-   },
    "offline_enabled": false,
-   "options_ui": {
-      "page": "options.html",
-      "chrome_style": true
-   }  
+   "options_page": "options.html",
+   "background": {
+      "service_worker": "background.js"
+    }
 }
