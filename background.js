@@ -39,9 +39,13 @@ var translate = function(string) {
 }
 
 chrome.contextMenus.create({
+	'id': "contextual-translator-menu",
 	'title': traducir,
-	'contexts': ['selection'],
-	'onclick': function(info, tab) {
-		translate(info.selectionText);
-	}
+	'contexts': ['selection']
+});
+
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
+  if (info.menuItemId === "contextual-translator-menu") {
+    translate(info.selectionText);
+  }
 });
